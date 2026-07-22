@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    L'API Marstek n'utilise pas HTTPS (JSON-RPC brut sur UDP), donc le trafic
+    "clair" (non chiffre) est necessaire. On le restreint explicitement au
+    strict necessaire : pas de HTTP/HTTPS en clair vers Internet.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>
